@@ -1,0 +1,37 @@
+-
+    const navbar = [
+        {
+            name: 'Home',
+            link: '/',
+            modificate: false
+        },
+        {
+            name: 'About Us',
+            link: '/aboutus',
+            modificate: false
+        },
+        {
+            name: 'How it works',
+            link: '/howitworks',
+            modificate: false
+        },
+        {
+            name: 'For Freelancer',
+            link: '/forfreelancer',
+            modificate: false
+        },
+        {
+            name: 'Get Started',
+            link: '/getstarted',
+            modificate: true
+        },
+    ]
+
+ul.navbar 
+    each val in navbar
+        if val.modificate
+            li.navbar__item
+                a(href=val.link class='navbar__link navbar__link'+ '--active' ) #{val.name}
+        else 
+            li.navbar__item
+                a(href=val.link class='navbar__link' ) #{val.name}

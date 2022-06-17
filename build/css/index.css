@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../fonts/sfpro/SFProDisplay-Medium.eot");
+  src: local("SF Pro Display Medium"), local("SFProDisplay-Medium"), url("../fonts/sfpro/SFProDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/sfpro/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/sfpro/SFProDisplay-Medium.woff") format("woff"), url("../fonts/sfpro/SFProDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../fonts/sfpro/SFProDisplay-Bold.eot");
+  src: local("SF Pro Display Bold"), local("SFProDisplay-Bold"), url("../fonts/sfpro/SFProDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/sfpro/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/sfpro/SFProDisplay-Bold.woff") format("woff"), url("../fonts/sfpro/SFProDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../fonts/sfpro/SFProDisplay-Semibold.eot");
+  src: local("SF Pro Display Semibold"), local("SFProDisplay-Semibold"), url("../fonts/sfpro/SFProDisplay-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/sfpro/SFProDisplay-Semibold.woff2") format("woff2"), url("../fonts/sfpro/SFProDisplay-Semibold.woff") format("woff"), url("../fonts/sfpro/SFProDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 27px 11.25% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+.navbar__link {
+  text-decoration: none;
+  font-family: "SFProDisplay";
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.navbar__link--active {
+  background-color: #0077C0;
+  padding: 10px 28px;
+  border-radius: 10px;
+  font-family: "SFProDisplay";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.logo__title {
+  font-family: "SF Pro Display";
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .header__right {
+    display: none;
+  }
+}
+.header__checkbox {
+  display: none;
+}
+.header__checkbox:checked ~ .header__right {
+  display: flex;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.header__toggle {
+  display: none;
+  position: absolute;
+  font-size: 25px;
+  right: 0;
+}
+@media (max-width: 1200px) {
+  .header__toggle {
+    display: block;
+  }
+}
+
+.recruit {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  padding: 43px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 92px;
+}
+@media (max-width: 1200px) {
+  .recruit {
+    flex-direction: column;
+  }
+}
+.recruit__background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+.recruit__image {
+  margin: 27px 44px 0 0;
+}
+@media (max-width: 1200px) {
+  .recruit__image {
+    margin: 0;
+    width: 50%;
+    max-height: 650px;
+  }
+}
+.recruit__content {
+  padding: 130px 0 0 0;
+}
+.recruit__title {
+  margin: 0 0 25px 0;
+  font-family: "SFProDisplay";
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 125%;
+  letter-spacing: -0.5px;
+  color: #000000;
+}
+@media (max-width: 600px) {
+  .recruit__title {
+    font-size: 30px;
+  }
+}
+.recruit__description {
+  margin: 0 0 35px 0;
+  font-family: "SFProDisplay";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #000000;
+}
+.recruit__button {
+  background-color: #0077C0;
+  padding: 10px 28px;
+  border-radius: 10px;
+  font-family: "SFProDisplay";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 97px 0 72px;
+  gap: 71px;
+}
+
+.testimonial {
+  position: relative;
+  width: 100%;
+  padding: 87px 0 100px 0;
+  z-index: 0;
+}
+.testimonial__background {
+  position: absolute;
+  z-index: -1;
+  left: -162px;
+  top: 0;
+  width: 150vw;
+  height: 100%;
+  background-color: #fafafa;
+}
+.testimonial__pretitle {
+  text-align: center;
+  margin: 0 0 15px 0;
+  font-family: "SFProDisplay";
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #0077C0;
+}
+.testimonial__title {
+  text-align: center;
+  font-family: "SFProDisplay";
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 125%;
+  letter-spacing: -0.5px;
+  color: #000000;
+}
+.testimonial__commentBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .testimonial__commentBox {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+.testimonial__colum {
+  width: calc(33.3333333333% - 48px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+}
+@media (max-width: 1200px) {
+  .testimonial__colum {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+}
+
+.comment {
+  padding: 20px;
+  background-color: #ffffff;
+}
+.comment__userBox {
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 0 15px 0;
+}
+.comment__name {
+  font-family: "SFProDisplay";
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.comment__text {
+  font-family: "SFProDisplay";
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}

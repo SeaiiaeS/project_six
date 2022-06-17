@@ -1,0 +1,17 @@
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    &__title{
+        @include fonts (
+            $font-family: 'SF Pro Display' ,
+            $font-size: 24px,
+            $font-weight: bold,
+            $line-height: null,
+            $letter-spacing: null,
+            $color: $black,
+        );
+    }
+}

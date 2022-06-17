@@ -1,0 +1,34 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+
+    &__link{
+        text-decoration: none;
+        @include fonts (
+            $font-family: 'SFProDisplay' ,
+            $font-size: 16px,
+            $font-weight: 500,
+            $line-height: null,
+            $letter-spacing: null,
+            $color: $black,
+        );  
+        
+        &--active{
+            background-color: $oceanBoatBlue;
+            padding: 10px 28px;
+            border-radius: 10px;
+            @include fonts (
+                $font-family: 'SFProDisplay' ,
+                $font-size: 18px,
+                $font-weight: 600,
+                $line-height: 40px,
+                $letter-spacing: null,
+                $color: $white,
+            );  
+        }
+    }
+
+}
