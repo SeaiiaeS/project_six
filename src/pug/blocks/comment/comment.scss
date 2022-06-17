@@ -1,0 +1,33 @@
+.comment{
+    padding: 20px;
+    background-color: #ffffff;
+
+    &__userBox{
+        width: 20%;
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 0 15px 0;
+    }
+
+    &__name{
+        @include fonts(
+            $font-family: 'SFProDisplay' ,
+            $font-size: 16px,
+            $font-weight: 500,
+            $line-height: null,
+            $letter-spacing: null,
+            $color: $black,
+        )
+    }
+
+    &__text{
+        @include fonts(
+            $font-family: 'SFProDisplay' ,
+            $font-size: 16px,
+            $font-weight: 400,
+            $line-height: null,
+            $letter-spacing: null,
+            $color: $black,
+        )
+    }
+}

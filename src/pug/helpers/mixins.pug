@@ -1,0 +1,9 @@
+mixin comment(classes, fullname, image, fulltext )
+    div(class=`${classes} comment`)
+        .comment__userBox 
+            img(src='/image/'+ image).comment__Image
+            .comment__info
+                h3.comment__name= fullname
+                img(src='./image/Stars.png').comment__rating
+        p.comment__text= fulltext
+            

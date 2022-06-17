@@ -190,3 +190,87 @@ body {
   padding: 97px 0 72px;
   gap: 71px;
 }
+
+.testimonial {
+  position: relative;
+  width: 100%;
+  padding: 87px 0 100px 0;
+  z-index: 0;
+}
+.testimonial__background {
+  position: absolute;
+  z-index: -1;
+  left: -162px;
+  top: 0;
+  width: 150vw;
+  height: 100%;
+  background-color: #fafafa;
+}
+.testimonial__pretitle {
+  text-align: center;
+  margin: 0 0 15px 0;
+  font-family: "SFProDisplay";
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #0077C0;
+}
+.testimonial__title {
+  text-align: center;
+  font-family: "SFProDisplay";
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 125%;
+  letter-spacing: -0.5px;
+  color: #000000;
+}
+.testimonial__commentBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .testimonial__commentBox {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+.testimonial__colum {
+  width: calc(33.3333333333% - 48px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+}
+@media (max-width: 1200px) {
+  .testimonial__colum {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+}
+
+.comment {
+  padding: 20px;
+  background-color: #ffffff;
+}
+.comment__userBox {
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 0 15px 0;
+}
+.comment__name {
+  font-family: "SFProDisplay";
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.comment__text {
+  font-family: "SFProDisplay";
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
