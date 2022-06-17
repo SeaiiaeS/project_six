@@ -1,6 +1,7 @@
 .header{
     position: relative;
     width: 100%;
+    padding: 27px 162/1440*100% 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,6 +23,7 @@
             left: 0;
             margin: 0 auto;
             flex-direction: column;
+            z-index: 99;
         }
     }
 
@@ -29,7 +31,7 @@
         display: none;
         position: absolute;
         font-size: 25px;
-        right: 0;
+        right: 70px;
         @include for-desktop{
             display: block;
         }
