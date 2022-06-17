@@ -1,7 +1,84 @@
-.container {
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./fonts/sfpro/SFProDisplay-Medium.eot");
+  src: local("SF Pro Display Medium"), local("SFProDisplay-Medium"), url("./fonts/sfpro/SFProDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("./fonts/sfpro/SFProDisplay-Medium.woff2") format("woff2"), url("./fonts/sfpro/SFProDisplay-Medium.woff") format("woff"), url("./fonts/sfpro/SFProDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./fonts/sfpro/SFProDisplay-Bold.eot");
+  src: local("SF Pro Display Bold"), local("SFProDisplay-Bold"), url("./fonts/sfpro/SFProDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/sfpro/SFProDisplay-Bold.woff2") format("woff2"), url("./fonts/sfpro/SFProDisplay-Bold.woff") format("woff"), url("./fonts/sfpro/SFProDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./fonts/sfpro/SFProDisplay-Semibold.eot");
+  src: local("SF Pro Display Semibold"), local("SFProDisplay-Semibold"), url("./fonts/sfpro/SFProDisplay-Semibold.eot?#iefix") format("embedded-opentype"), url("./fonts/sfpro/SFProDisplay-Semibold.woff2") format("woff2"), url("./fonts/sfpro/SFProDisplay-Semibold.woff") format("woff"), url("./fonts/sfpro/SFProDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   width: 1440px;
-  padding: 0 162px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 27px 11.25% 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.logo__title {
+  font-family: "SF Pro Display";
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+.navbar__link {
+  text-decoration: none;
+  font-family: "SFProDisplay";
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.navbar__link--active {
+  background-color: #0077C0;
+  padding: 10px 28px;
+  border-radius: 10px;
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #ffffff;
 }

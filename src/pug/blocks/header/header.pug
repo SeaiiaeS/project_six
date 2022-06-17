@@ -27,11 +27,16 @@
         },
     ]
 
-ul.navbar 
-    each val in navbar
-        if val.modificate
-            li.navbar__item
-                a(href=val.link class='navbar__link navbar__link'+ '--active' ) #{val.name}
-        else 
-            li.navbar__item
-                a(href=val.link class='navbar__link' ) #{val.name}
+.header 
+    a.header__left.logo
+        img(src='./image/navbar__logo.png').logo_image 
+        h3.logo__title Wakanda
+    ul.header__right.navbar 
+        each val in navbar
+            if val.modificate
+                li.navbar__item
+                    a(href=val.link class='navbar__link navbar__link'+ '--active' ) #{val.name}
+            else 
+                li.navbar__item
+                    a(href=val.link class='navbar__link' ) #{val.name}
+
