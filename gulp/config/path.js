@@ -23,6 +23,7 @@ export const path = {
         pug: `${srcFolder}/**/*.pug`,
         scss: `${srcFolder}/**/*.scss`,
         image: `${imageFolder}`,
+        fonts: `${srcFolder}/fonts/**/*.{eot,svg,ttf,woff,woff2}`,
     },
     fonts:{
         src: `${srcFolder}/fonts/**/*.{ttf,woff,woff2,eot,svg}`,
