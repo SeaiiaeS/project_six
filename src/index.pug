@@ -1,4 +1,5 @@
 extends ./pug/layout/default.pug
+include ./pug/helpers/mixins
 
 block variables
 
@@ -9,3 +10,4 @@ block content
     .container
         include ./pug/blocks/header/header
         include ./pug/blocks/recruit/recruit
+        include ./pug/blocks/social/social
