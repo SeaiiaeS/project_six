@@ -6,4 +6,5 @@ export const pug = () => {
             pretty: true
         }))
         .pipe(app.gulp.dest(app.path.build.files))
+        .pipe(app.plugins.browserSync.stream())
 }

@@ -12,7 +12,14 @@ global.app = {
 import { clean } from './gulp/task/clean.js';
 import { pug } from './gulp/task/pug.js';
 import { scss } from './gulp/task/scss.js';
+import { image } from './gulp/task/image.js';
 import { browserSync } from './gulp/config/server.js';
+
+gulp.task('watch', () => {
+    gulp.watch(app.path.watch.pug, pug);
+    gulp.watch(app.path.watch.scss, scss);
+    gulp.watch(app.path.watch.image, image);
+})
 
 const defaultTask = gulp.series(
     clean,
@@ -20,9 +27,9 @@ const defaultTask = gulp.series(
         pug,
         scss,
         // fonts,
-        // images 'watch',
+        image
     ),
-    gulp.parallel(browserSync)
+    gulp.parallel('watch' , browserSync)
 )
 
 gulp.task('default', defaultTask);
