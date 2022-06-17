@@ -1,7 +1,7 @@
 @import './scss/mixins.scss';
 
 @font-face {
-    font-family: 'SF Pro Display';
+    font-family: 'SFProDisplay';
     src: url('./fonts/sfpro/SFProDisplay-Medium.eot');
     src: local('SF Pro Display Medium'), local('SFProDisplay-Medium'),
         url('./fonts/sfpro/SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
@@ -13,7 +13,7 @@
 }
 
 @font-face {
-    font-family: 'SF Pro Display';
+    font-family: 'SFProDisplay';
     src: url('./fonts/sfpro/SFProDisplay-Bold.eot');
     src: local('SF Pro Display Bold'), local('SFProDisplay-Bold'),
         url('./fonts/sfpro/SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
@@ -25,7 +25,7 @@
 }
 
 @font-face {
-    font-family: 'SF Pro Display';
+    font-family: 'SFProDisplay';
     src: url('./fonts/sfpro/SFProDisplay-Semibold.eot');
     src: local('SF Pro Display Semibold'), local('SFProDisplay-Semibold'),
         url('./fonts/sfpro/SFProDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
@@ -48,7 +48,8 @@ $oceanBoatBlue:#0077C0;
 
 
 body{
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
 }
 .container{
     width: 100%;
