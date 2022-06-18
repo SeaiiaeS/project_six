@@ -1,6 +1,8 @@
-div(class=`${classes} comment`)
-        .comment__userBox 
-            img(src='/image/'+ image).comment__Image
-            h3.comment__name= fullname
+.comment
+    .comment__userBox 
+        img(src='/image/'+ image).comment__Image
+        .comment__info
+            h3.comment__name
             img(src='./image/Stars.png').comment__rating
-        p.comment__text= fulltext
+    p.comment__text
+            

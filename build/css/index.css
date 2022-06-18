@@ -68,6 +68,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  text-decoration: none;
 }
 .logo__title {
   font-family: "SF Pro Display";
@@ -101,6 +102,8 @@ body {
   margin: 0 auto;
   flex-direction: column;
   z-index: 99;
+  padding: 20px 0 20px 0;
+  background-color: #fafafa;
 }
 .header__toggle {
   display: none;
@@ -211,6 +214,7 @@ body {
 }
 .testimonial__title {
   text-align: center;
+  margin: 0 0 48px 0;
   font-family: "SFProDisplay";
   font-size: 48px;
   font-weight: bold;
@@ -230,7 +234,7 @@ body {
   }
 }
 .testimonial__colum {
-  width: calc(33.3333333333% - 48px);
+  width: calc(33.3333333333% - 16px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -251,10 +255,19 @@ body {
   background-color: #ffffff;
 }
 .comment__userBox {
-  width: 20%;
   display: flex;
   justify-content: flex-start;
   margin: 0 0 15px 0;
+  gap: 8px;
+}
+.comment__Image {
+  width: 48px;
+  height: 48px;
+}
+.comment__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .comment__name {
   font-family: "SFProDisplay";

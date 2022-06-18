@@ -3,10 +3,21 @@
     background-color: #ffffff;
 
     &__userBox{
-        width: 20%;
         display: flex;
         justify-content: flex-start;
         margin: 0 0 15px 0;
+        gap: 8px;
+    }
+
+    &__Image{
+        width: 48px;
+        height: 48px;
+    }
+
+    &__info{
+        display:flex;
+        flex-direction: column;
+        gap: 8px;
     }
 
     &__name{
