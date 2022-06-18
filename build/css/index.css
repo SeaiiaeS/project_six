@@ -27,7 +27,6 @@
 
 body {
   width: 100%;
-  max-width: 1440px;
 }
 
 .container {
@@ -36,6 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .navbar {
