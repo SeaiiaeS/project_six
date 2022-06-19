@@ -193,7 +193,88 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 71px;
-  padding: 97px 11.25% 72px;
+  padding: 97px 11.25% 94px;
+}
+
+.feature {
+  background-color: #0077C0;
+  padding: 80px 11.25% 133px;
+}
+.feature__pretitle {
+  text-align: center;
+  margin: 0 0 8px 0;
+  font-family: "SFProDisplay";
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #fafafa;
+}
+.feature__title {
+  text-align: center;
+  margin: 0 0 75px 0;
+  font-family: "SFProDisplay";
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+.feature__flexbox {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+@media (max-width: 1200px) {
+  .feature__flexbox {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+.card {
+  width: calc(33.3333333333% - 16px);
+}
+@media (max-width: 1200px) {
+  .card {
+    width: 100%;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+}
+.card__logo {
+  display: block;
+  margin-bottom: 48px;
+  width: 108px;
+  height: 108px;
+}
+@media (max-width: 1200px) {
+  .card__logo {
+    margin: 0 auto 48px;
+  }
+}
+.card__title {
+  margin-bottom: 15px;
+  font-family: "SFProDisplay";
+  font-size: 24px;
+  font-weight: 700;
+  color: #fafafa;
+}
+@media (max-width: 1200px) {
+  .card__title {
+    text-align: center;
+  }
+}
+.card__text {
+  font-family: "SFProDisplay";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fafafa;
+}
+@media (max-width: 1200px) {
+  .card__text {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .testimonial {

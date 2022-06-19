@@ -1,0 +1,51 @@
+.card{
+    width: calc(100% / 3 - 48px/3);
+    @include for-desktop{
+        width: 100%;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    &__logo{
+        display: block;
+        margin-bottom: 48px;
+        width: 108px;
+        height: 108px;
+
+        @include for-desktop{
+            margin:0 auto 48px;
+        }
+    }
+
+    &__title{
+        margin-bottom: 15px;
+
+        @include for-desktop{
+            text-align: center;
+        }
+        @include fonts(
+            $font-family: 'SFProDisplay' ,
+            $font-size: 24px,
+            $font-weight: 700,
+            $line-height: null,
+            $letter-spacing: null,
+            $color: #fafafa,
+        )
+    }
+
+    &__text{
+        @include for-desktop{
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        @include fonts(
+            $font-family: 'SFProDisplay' ,
+            $font-size: 16px,
+            $font-weight: 400,
+            $line-height: 24px,
+            $letter-spacing: null,
+            $color: #fafafa,
+        )
+    }
+}

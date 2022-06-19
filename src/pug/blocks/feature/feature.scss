@@ -1,0 +1,41 @@
+.feature{
+    background-color: $oceanBoatBlue;
+    padding: 80px 162/1440*100% 133px;
+
+    &__pretitle{
+        text-align: center;
+        margin: 0 0 8px 0;
+        @include fonts(
+            $font-family: 'SFProDisplay' ,
+            $font-size: 16px,
+            $font-weight: 600,
+            $line-height: null,
+            $letter-spacing: 3px,
+            $color: #fafafa,
+        )
+    }
+    &__title{
+        text-align: center;
+        margin: 0 0 75px 0;
+        @include fonts(
+            $font-family: 'SFProDisplay' ,
+            $font-size: 48px,
+            $font-weight: bold,
+            $line-height: null,
+            $letter-spacing: -0.5px,
+            $color: $white,
+        )
+    }
+    &__flexbox{
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        @include for-desktop{
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+
+    &__item{
+    }
+}
