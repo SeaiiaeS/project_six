@@ -229,6 +229,7 @@ body {
     gap: 24px;
   }
 }
+
 .card {
   width: calc(33.3333333333% - 16px);
 }
@@ -274,6 +275,87 @@ body {
     width: 70%;
     margin: 0 auto;
     text-align: center;
+  }
+}
+
+.tutorial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+  padding: 70px 11.25% 72px;
+}
+@media (max-width: 900px) {
+  .tutorial {
+    flex-direction: column;
+  }
+}
+.tutorial__image {
+  min-width: 0;
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+.tutorial__title {
+  margin-bottom: 33px;
+  font-family: "SFProDisplay";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: -0.5px;
+  color: #000000;
+}
+@media (max-width: 599px) {
+  .tutorial__title {
+    font-size: 30px;
+  }
+}
+.tutorial__flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .tutorial__flexbox {
+    flex-wrap: wrap;
+  }
+}
+.tutorial__item {
+  margin-bottom: 16px;
+}
+.tutorial__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #C7EEFF;
+  font-family: "SFProDisplay";
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+@media (max-width: 599px) {
+  .tutorial__count {
+    font-size: 12px;
+    width: 25px;
+    height: 25px;
+  }
+}
+.tutorial__text {
+  display: inline-block;
+  margin-left: 16px;
+  font-family: "SFProDisplay";
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+@media (max-width: 599px) {
+  .tutorial__text {
+    font-size: 12px;
+    margin-left: 12px;
   }
 }
 

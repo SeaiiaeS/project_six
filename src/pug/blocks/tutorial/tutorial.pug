@@ -1,0 +1,17 @@
+-
+    const tutorial = [
+        'Sign in to our website',
+        'Fill out neccesary information',
+        'Discover thoudsands of freelancers',
+        'View freelancer’s profile and hire',
+        'Complete payment & it’s time to work!'
+    ]
+.tutorial
+    img(src="./image/tutorial__wireframe.png", alt="").tutorial__image
+    .tutorial__content 
+        h2.tutorial__title Wakanda is an easy platform to find talent
+        .tutorial__flexbox
+            each val, index  in tutorial
+                .tutorial__item 
+                    .tutorial__count= index + 1 
+                    span.tutorial__text= val

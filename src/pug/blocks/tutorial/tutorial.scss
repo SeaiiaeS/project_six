@@ -1,0 +1,90 @@
+.tutorial{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+    padding: 70px 162/1440*100% 72px;
+
+    @include for-tablet-landscape{
+        flex-direction: column;
+    }
+
+
+    &__image{
+        min-width: 0;
+        display: block;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+
+    &__title{
+        margin-bottom: 33px;
+        @include fonts (
+                $font-family: 'SFProDisplay' ,
+                $font-size: 48px,
+                $font-weight: 700,
+                $line-height: 125%,
+                $letter-spacing: -0.5px,
+                $color: $black,
+            ); 
+        @include for-phone-only{
+            font-size: 30px;
+        }
+    }
+
+    &__flexbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include for-tablet-landscape{
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item{
+        margin-bottom: 16px;
+    }
+
+    &__count{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: #C7EEFF;
+        @include fonts (
+                $font-family: 'SFProDisplay' ,
+                $font-size: 16px,
+                $font-weight: 600,
+                $line-height: null,
+                $letter-spacing: null,
+                $color: $black,
+            );
+        @include for-phone-only{
+            font-size: 12px;
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    &__text{
+        display: inline-block;
+        margin-left: 16px;
+        @include fonts (
+                $font-family: 'SFProDisplay' ,
+                $font-size: 16px,
+                $font-weight: 400,
+                $line-height: null,
+                $letter-spacing: null,
+                $color: $black,
+            );
+        @include for-phone-only{
+            font-size: 12px;
+            margin-left: 12px;
+        }
+    }
+
+}
