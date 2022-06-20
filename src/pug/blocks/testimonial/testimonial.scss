@@ -1,7 +1,7 @@
 .testimonial{
     position: relative;
     width: 100%;
-    padding: 80px 162/1440*100% 100px;
+    padding: 91px 162/1440*100% 100px;
     background-color: #fafafa;
     z-index: 0;
 
@@ -50,8 +50,10 @@
         @include for-desktop{
             width: 100%;
             flex-direction: row;
-            justify-content: space-between;
             gap: 24px;
+        }
+
+        @include for-tablet-landscape{
             flex-wrap: wrap;
         }
     }

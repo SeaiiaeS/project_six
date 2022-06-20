@@ -1,0 +1,69 @@
+.explore{
+    padding: 0 162/1440*100% ;
+    background-color: #C7EEFF;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 90px;
+
+    @include for-desktop{
+        padding: 50px 162/1440*100% 0;
+        flex-direction: column;
+    }
+
+    &__image{
+        min-width: 0;
+        height: auto;
+
+        @include for-desktop{
+            width: 100%;
+            max-width: 510px;
+        }
+    }
+
+    &__content{
+        max-width: 480px;
+    }
+
+    &__title{
+        margin-bottom: 15px;
+        @include fonts (
+                $font-family: 'SFProDisplay' ,
+                $font-size: 48px,
+                $font-weight: 700,
+                $line-height: 125%,
+                $letter-spacing: -0.5px,
+                $color: $black,
+            ); 
+        @include for-phone-only{
+            font-size: 30px;
+        }
+    }
+
+    &__text{
+        margin-bottom: 35px;
+        @include fonts (
+                $font-family: 'SFProDisplay' ,
+                $font-size: 16px,
+                $font-weight: 400,
+                $line-height: 150%,
+                $letter-spacing: null,
+                $color: $black,
+            );
+    }
+
+    &__link{
+        text-decoration: none;
+        background-color: $oceanBoatBlue;
+        padding: 10px 28px;
+        border-radius: 10px;
+        @include fonts (
+            $font-family: 'SFProDisplay' ,
+            $font-size: 18px,
+            $font-weight: 600,
+            $line-height: 40px,
+            $letter-spacing: null,
+            $color: $white,
+        );
+    }
+}
