@@ -1,5 +1,4 @@
 import gulpPug from 'gulp-pug';
-import gulpWebp from 'gulp-webp-html-nosvg';
 
 export const pug = () => {
     return app.gulp.src(app.path.src.pug)
@@ -14,7 +13,6 @@ export const pug = () => {
         .pipe(gulpPug({
             pretty: true
         }))
-        .pipe(gulpWebp())
         .pipe(app.gulp.dest(app.path.build.files))
         .pipe(app.plugins.browserSync.stream())
 }

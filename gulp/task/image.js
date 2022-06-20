@@ -12,13 +12,13 @@ export const image = () => {
             })     
         }))
         .pipe(app.plugins.gulpNewer(app.path.build.imageFolder))
-        .pipe(webp())
         .pipe(imageMin({
             progressive: true,
             svgoPlugins: [{ removeViewBox: false }],
             interlaced: true,
             optimizationLevel: 3,
         }))
+        .pipe(webp())
         .pipe(app.gulp.dest(app.path.build.imageFolder))
         .pipe(app.plugins.browserSync.stream());
 }
