@@ -33,5 +33,15 @@ const defaultTask = gulp.series(
     ),
     gulp.parallel('watch' , browserSync)
 )
+const buildf = gulp.series(
+    clean,
+    gulp.parallel(
+        pug,
+        scss,
+        fonts,
+        image
+    ),
+)
 
 gulp.task('default', defaultTask);
+gulp.task('build', buildf);
